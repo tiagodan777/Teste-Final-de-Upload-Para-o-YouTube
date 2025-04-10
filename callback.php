@@ -5,7 +5,7 @@ require_once 'db.php';
 session_start();
 
 $client = new Google\Client();
-$client->setAuthConfig('');
+$client->setAuthConfig('client_secret.json');
 $client->setRedirectUri('http://localhost:8888/Teste-Final-de-Upload-Para-o-YouTube/callback.php');
 $client->addScope(Google\Service\YouTube::YOUTUBE_UPLOAD);
 

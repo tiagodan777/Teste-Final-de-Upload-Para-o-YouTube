@@ -48,7 +48,7 @@ if (isset($_FILES['thumbnail']) && $_FILES['thumbnail']['error'] === UPLOAD_ERR_
 
 // Preparar cliente
 $client = new Google\Client();
-$client->setAuthConfig('');
+$client->setAuthConfig('client_secret.json');
 $client->addScope(Google\Service\YouTube::YOUTUBE_UPLOAD);
 $client->setAccessType('offline');
 
